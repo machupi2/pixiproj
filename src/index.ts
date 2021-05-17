@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js';
-
+import { MyClass } from './hoge/MyClass';
 // The application will create a renderer using WebGL, if possible,
 // with a fallback to a canvas render. It will also setup the ticker
 // and the root stage PIXI.Container
@@ -13,6 +13,9 @@ document.body.appendChild(app.view);
 app.loader.add('bunny', 'assets/bunny.png').load((loader, resources) => {
     // This creates a texture from a 'bunny.png' image
     const bunny = new PIXI.Sprite(resources.bunny.texture);
+    const myClass = new MyClass();
+    myClass.Name = 'myclass';
+    console.log(myClass.Name);
     // Setup the position of the bunny
     bunny.x = app.renderer.width / 2;
     bunny.y = app.renderer.height / 2;

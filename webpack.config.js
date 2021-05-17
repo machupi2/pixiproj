@@ -26,7 +26,7 @@ const config = {
             title: 'Pixi.js Demo',
         }),
         new CopyPlugin({
-            patterns: [{ from: 'src/assets', to: 'assets' }],
+            patterns: [{ from: 'assets', to: 'assets' }],
         }),
         new SourceMapDevToolPlugin({
             filename: '[file].map',
