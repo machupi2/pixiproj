@@ -22,5 +22,9 @@
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    // eslint が webpack.config.js にもかかるのを抑制
+    "eslint.options": {
+        "ignorePattern": "webpack.config.js"
+    }
 }
