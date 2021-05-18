@@ -26,5 +26,11 @@
     // eslint が webpack.config.js にもかかるのを抑制
     "eslint.options": {
         "ignorePattern": "webpack.config.js"
-    }
+    },
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true
+    // "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    // "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+
+    // "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    // "typescript.format.placeOpenBraceOnNewLineForFunctions": true
 }

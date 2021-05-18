@@ -1,5 +1,6 @@
 {
     "root": true,
+    "plugins": ["@typescript-eslint"],
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
@@ -15,12 +16,19 @@
         "no-extra-semi": "error",
         "no-unexpected-multiline": "error",
         "no-unreachable": "error"
+        // prettier と競合する？
+        // "brace-style": [
+        //     "error",
+        //     "allman",
+        //     {
+        //         "allowSingleLine": true
+        //     }
+        // ]
     },
     "env": {
         "es6": true,
         "browser": true
     },
-    "plugins": ["@typescript-eslint"],
 
     "parserOptions": {
         "sourceType": "module",
