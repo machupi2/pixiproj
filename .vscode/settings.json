@@ -21,7 +21,8 @@
     "npm.packageManager": "yarn",
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    // これを false にすると defaultFormatter (prettier)でのフォーマットが無効になり、source.fixAll.eslintでのフォーマットが有効になる
+    // pritter 無効にして eslint のルールで自動フォーマットしても良いのでは？
     "editor.formatOnSave": true,
     // eslint が webpack.config.js にもかかるのを抑制
     "eslint.options": {
